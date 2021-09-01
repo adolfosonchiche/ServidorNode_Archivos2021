@@ -3,7 +3,7 @@ let http = require('http');
 let fs = require('fs');
 
 //para que este disponible en mi local host
-const ip = '127.0.0.1'; 
+//const ip = '127.0.0.1'; 
 // en  el puerto 4000
 const port = 4000;
 
@@ -40,6 +40,6 @@ http.createServer(function(request, response){
         });
     }
 
-}).listen(port, ip);
+}).listen(port);
 
-console.log('Running at http://' + ip + ':' + port+'/');
+console.log('Running at http://localhost'   + ':' + port+'/');
